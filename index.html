@@ -1,218 +1,169 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-      rel="stylesheet"
     />
   </head>
   <body>
-    <!-- START NAV -->
-
-    <nav id="navbar" class="nav">
-      <ul class="nav-list">
-        <li>
-          <a href="#welcome-section">About</a>
-        </li>
-        <li>
-          <a href="#projects">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- END NAV -->
-
-    <!-- START WELCOME SECTION -->
-
-    <section id="welcome-section" class="welcome-section">
-      <h1>Hey I am Vanessa Secolles</h1>
-      <p>An Awesome Web Developer</p>
-      <p>Welcome To My Portfolio Page</p>
-    </section>
-
-    <!-- END WELCOME SECTION -->
-
-    <!-- START PROJECTS SECTION -->
-
-    <section id="projects" class="projects-section">
-      <h2 class="projects-section-header">These are some of my projects</h2>
-
-      <div class="projects-grid">
-        <a
-          href="https://codepen.io/freeCodeCamp/full/zNqgVx"
-          target="_blank"
-          class="project project-tile"
-        >
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
           <img
-            class="project-image"
-            src="https://i.pinimg.com/564x/ff/e9/09/ffe909fde5aab58bee49392e5fe22c5c.jpg"
-            alt="project"
+            id="header-img"
+            src="img/PF logo.png"
+            alt="company logo"
           />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Tribute Page
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-            alt="project"
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">What We Offer</a></li>
+            <li><a class="nav-link" href="#how-it-works">Tour Packages</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container"></div>
+
+      <section id="hero">
+        <h2>The Best Travel Agency in Baguio</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter City/Country"
+            required
           />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Random Quote Machine
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/wgGVVX"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            JavaScript Calculator
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/mVEJag"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Map Data Across the Globe
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/wGqEga"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Wikipedia Viewer
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/KzXQgy"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Tic Tac Toe Game
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
+          <input id="submit" type="submit" value="Where are you traveling?" class="btn" />
+        </form>
+      </section>
+
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Tour Packages</h2>
+              <br>
+              <p>Explore the World with Our Exclusive Tour Packages!
+
+              </p>
+              <br>
+              <h4>What Sets Our Tour Packages Apart:
+              </h4>
+              <br>
+              <ul>
+                <li>Curated Itineraries
+                </li>
+                <li>Inclusive Packages
+                </li>
+                <li>Local Guides</li>
+                <li>Flexibility</li>
+                <li>Unmatched Value</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h2>Flight Booking</h2>
+              <br>
+            <h4>Seamless Flight Bookings, Endless Possibilities!
+            </h4>
+    
+              <p>
+                Discover the world effortlessly with our user-friendly platform.
+              </p>
+              <br>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h2>Hotel Booking</h2>
+              <br>
+              <h4>Find Your Perfect Stay – Effortless and Affordable!
+              </h4>
+              <br>
+              <p>
+                Discover diverse accommodation options with our hotel booking service. From luxury resorts to charming boutique hotels.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works">
+          <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section id="pricing">
+          <div class="product" id="tenor">
+            <div class="level">2 days & 1 night</div>
+            <h2>$600</h2>
+            <ol>
+              <li>Luzon Areas</li>
+              <li>Inclusives of Meals</li>
+              <li>Inclusives of Airfare</li>
+              <li>Inclusives of Hotel Accommodations</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">5 days & 4 nights</div>
+            <h2>$900</h2>
+            <ol>
+              <li>Visaya's Areas</li>
+              <li>Inclusives of Meals</li>
+              <li>Inclusives of Airfare</li>
+              <li>Inclusives of Hotel Accommodations</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="valve">
+            <div class="level">7 days & 6 nights</div>
+            <h2>$1200</h2>
+            <ol>
+              <li>Asian Countries</li>
+              <li>Inclusives of Meals</li>
+              <li>Inclusives of Airfare</li>
+              <li>Inclusives of Hotel Accommodations</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2023, Path Finder Co.,</span>
+        </footer>
       </div>
-
-      <a
-        href="https://codepen.io/FreeCodeCamp/"
-        class="btn btn-show-all"
-        target="_blank"
-        >Show all<i class="fas fa-chevron-right"></i
-      ></a>
-    </section>
-
-    <!-- END PROJECTS SECTION -->
-
-    <!-- START CONTACT SECTION -->
-
-    <section id="contact" class="contact-section">
-      <div class="contact-section-header">
-        <h2>Let's work together...</h2>
-        <p>How do you take your coffee?</p>
-      </div>
-      <div class="contact-links">
-        <a
-          href="https://facebook.com/freecodecamp"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-facebook-square"></i> Facebook</a
-        >
-        <a
-          id="profile-link"
-          href="https://github.com/freecodecamp"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
-        <a
-          href="https://twitter.com/freecodecamp"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-twitter"></i> Twitter</a
-        >
-        <a href="/cdn-cgi/l/email-protection#315449505c415d54715449505c415d541f525e5c" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
-        >
-        <a href="tel:555-555-5555" class="btn contact-details"
-          ><i class="fas fa-mobile-alt"></i> Call me</a
-        >
-      </div>
-    </section>
-
-    <!-- END CONTACT SECTION -->
-
-    <!-- START FOOTER SECTION -->
-
-    <footer>
-      <p>
-        **This is just a fake portfolio. All the projects and contact details
-        given are not real.
-      </p>
-      <p>
-        &copy; Created for
-        <a href="https://www.freecodecamp.com/" target="_blank"
-          >freeCodeCamp <i class="fab fa-free-code-camp"></i
-        ></a>
-      </p>
-    </footer>
-
-    <!-- END FOOTER SECTION -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+    </div>
+  </body>
 </html>
