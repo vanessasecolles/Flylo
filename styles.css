@@ -48,7 +48,7 @@ button:hover {
   transform: scale(1.1);
 }
 nav {
-  padding: 20px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,12 +156,12 @@ section.productive a img {
   transform: translateY(3px);
 }
 
-/* Reviews styles  */
 section.reviews {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 80px;
+  height: 80vh;
 }
 
 section.reviews .card:nth-child(1) {
